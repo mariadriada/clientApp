@@ -3,5 +3,5 @@ from django.shortcuts import render_to_response
 
 #Return template for contacts
 def load_contact(request):
-	return render_to_response('contacts.html')
+	return render_to_response('contact.html')
 
