@@ -3,7 +3,8 @@
 {% block content %}
 
 <!-- Client form -->	
-	<form role="form" id="form_contact" action="javascript:form_click()">	 
+	<form role="form" id="form"  method="POST" action="create/">	 
+		{% csrf_token %}
 
 	<div class="form-group">
 		<label for="name">Name:</label>
@@ -15,13 +16,13 @@
 		<label for="email">Email Address:</label>
 		<input type="email" class="form-control" id="email"><br>
 		<label for="telephon">Phone Number:</label>
-		<input type="text" class="form-control" id="lastname">
+		<input type="text" class="form-control" id="phone">
 	</div>
 
 	<div class="form-group-all">
 		<label for="text">Your comment</label><br>
-		<textarea rows="4" cols="50" >
-		</textarea  id="comment" class="form-control">
+		<textarea rows="4" cols="50" id="comment" class="form-control">
+		</textarea >
 	</div>
 
 	<button type="submit" class="btn btn-default">Submit</button>

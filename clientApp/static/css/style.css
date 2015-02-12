@@ -67,7 +67,7 @@ html{
 /*Media */
 @media screen and (max-width: 700px) {
     body {
-        background-color: red;
+        background-color: #E6E6E6;
     }
 	.container form .form-group {
 		width: 100%;
